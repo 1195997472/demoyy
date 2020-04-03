@@ -1,0 +1,27 @@
+select w.work_type_name , g.* from  e_order_flow_ctrl_string g ,e_work_type w  where
+ g.status = w.work_type_id and g.srv_order_id = '9719121921450410' and g.eseq = '1'
+ 
+ 
+ select b.name,a.* from E_WORK_ASGN a,e_work_area b where a.work_area_id=b.work_area_id and a.srv_order_id ='9719121921450410'  order by a.srv_order_seq
+  
+ select count(srv_order_id) count
+		from e_order_flow_plock 
+		where  srv_order_id = '9719121921450410' and system_id = '1' 
+ 
+ update E_WORK_ASGN aa set aa.state='X' where srv_order_id ='9719121921459054' and aa.state='V'
+ select * from e_jk_dd t where t.srv_order_id in('9719121921450410');
+ --ÇåÁ÷³Ì
+  delete from E_ORDER_FLOW_CTRL where srv_order_id in('9719121921450410'); 
+  delete from e_order_flow_lock t where t.srv_order_id in('9719121921450410');
+  delete from E_ORDER_FLOW_CTRL_EX where srv_order_id in('9719121921450410');
+  delete from E_ORDER_FLOW_CTRL_STRING where srv_order_id in('9719121921450410');
+  delete from E_ORDER_RE_FLOW_CTRL_STRING where srv_order_id in('9719121921450410');
+  delete from e_order_flow where srv_order_id in('9719121921450410') ;
+  delete from e_work_asgn where srv_order_id in('9719121921450410') ;
+  delete from e_order_flow_log t where t.srv_order_id in('9719121921450410');
+  delete from e_order_handle t where t.srv_order_id in('9719121921450410');
+  delete from e_jk_dd t where t.srv_order_id in('9719121921450410');
+  delete from e_work_xml t where t.srv_order_id in('9719121921450410');
+
+  
+select * from e_obstacle_order  where rownum=1;
