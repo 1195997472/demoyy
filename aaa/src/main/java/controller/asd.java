@@ -5,5 +5,17 @@ package controller;
  * @Date: 2020/05/19
  * @Description:
  */
-public class asd { //dasdsdasd
+public class asd {
+    /**
+     * 用户Id
+     */
+    private Long userId;
+    /**
+     * 配置键
+     */
+    private String code;
+    /**
+     * 配置值
+     */
+    private String value;
 }
