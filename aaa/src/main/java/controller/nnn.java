@@ -15,7 +15,7 @@ public class nnn {
      */
     private String code;
     /**
-     * 配置值
+     * 配置值  信息
      */
     private String value;
 }
