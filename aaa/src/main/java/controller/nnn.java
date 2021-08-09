@@ -14,8 +14,4 @@ public class nnn {
      * 配置键
      */
     private String code;
-    /**
-     * 配置值  信息
-     */
-    private String value;
 }
