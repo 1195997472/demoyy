@@ -13,5 +13,5 @@ public class nnn {
     /**
      * 配置键
      */
-    private String code;
+    private String code1;
 }
