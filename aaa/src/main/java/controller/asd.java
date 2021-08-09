@@ -14,8 +14,4 @@ public class asd {
      * 配置键
      */
     private String code;
-    /**
-     * 配置值
-     */
-    private String value;
 }
